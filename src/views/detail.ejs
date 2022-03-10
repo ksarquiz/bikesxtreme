@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%-include('partials/head')%>
+<body>
+    <%-include('partials/header')%>
+
+    <main>
+        <article>
+            <div class="image-container">
+                <img src="static/images/imagen_cannondale.jpg" alt="bici">
+            </div>
+            <p> Información de la Bicicleta</p>
+            
+            <ul>
+                <li>Nombre: <%= productFound.nombre %> </li>
+                <li>Marca: <%= productFound.marca %> </li>
+                <li>Precio: <%= productFound.precio %> </li>
+                <li>Cuadro: <%= productFound.TalleCuadro %> </li>
+                <li>Descripción: <%= productFound.Descripcion %> </li>
+                <li>Rodado: <%= productFound.Rodado %> </li>
+                <li>Velocidades: <%= productFound.Velocidades %> </li>
+                <li>Color: <%= productFound.Color %> </li>
+            </ul>
+        </article>
+
+    </main>
+
+
+        <%-include('partials/footer')%>    
+</body>
+
+</html>

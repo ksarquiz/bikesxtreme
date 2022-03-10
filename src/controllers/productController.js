@@ -16,42 +16,81 @@ function writeFile(array){
 //*---------------------------------------------------------------------------------------------*//
 
 const controller={
-        listadoDeProductos: (req, res) => {
-        const producto = findAll()
-            res.render("listadoDeProductos")
+    listadoDeProductos: (req, res) => {
+        const producto = findAll();
+        res.render('listadoDeProductos', {producto: producto})
     },
+
     detail: (req, res) => {
-
-
+        const producto = findAll();
+        let productFound = producto.find (function(elemento){
+            return elemento.id == req.params.id;
+        });
+        res.render('detail', {productFound: productFound});
     },
+
     create: (req, res) => {
         res.render('form_productos');
     },
-    store: (req, res) => {
-        let productos = findAll()
-        let newProduct = {
-			id: products.length +1,
-			nombre_producto: req.body.name,
-            marca: req.body.marca,
-			precio: req.body.price,
-			talle_producto: req.body.talle_producto,
-            categoria:req.body.categoria,
-			fotoProducto: req.body.fotoProducto,
-			descripcion: req.body.descripcion}
 
-        productos.push(newProduct);
-        writeFile(productos);
-        res.redirect("/product/index");
+    store: (req, res) => {
+        const producto = findAll()
+        let newProduct = {
+			id: producto.length +1,
+			nombre_producto: req.body.nombre,
+            marca: req.body.marca,
+			precio: req.body.precio,
+			talle_producto: req.body.TalleCuadro,
+			fotoProducto: req.body.Imagen,
+            rodado: req.body.Rodado,
+            velocidades: req.body.Velocidades,
+            color: req.body.color,
+			descripcion: req.body.Descripcion}
+
+        producto.push(newProduct);
+        writeFile(producto);
+        res.redirect("/index");
     },
+
     edit: (req, res) => {
-        let productos = findAll()
-        let productToEdit = productos.find(function (product) {
+        const producto = findAll()
+        let productToEdit = producto.find(function (product) {
 			return product.id == req.params.id
 		})
         res.render("form_productos",{product:productToEdit})
     },
-    update: (req, res) => {},
-    destroy: (req, res) => {},
+
+    update: (req, res) => {
+        const producto = findAll();
+        let productFound = producto.find(function(elemento){
+            return elemento.id == req.params.id
+        })
+
+        productFound.nombre_producto = req.body.nombre;
+        productFound.marca = req.body.marca;
+		productFound.precio = req.body.precio;
+		productFound.talle_producto = req.body.TalleCuadro;
+		productFound.fotoProducto = req.body.Imagen;
+        productFound.rodado = req.body.Rodado;
+        productFound.velocidades = req.body.Velocidades;
+        productFound.color = req.body.color;
+		productFound.descripcion = req.body.Descripcion;
+
+        writeFile(producto);
+
+        res.redirect('/listadoDeProductos')
+    },
+
+    destroy: (req, res) => {
+        const producto = findAll();
+        let productIndex = producto.findIndex(function(elemento){
+            return elemento.id == req.params.id;
+        })
+
+        producto.splice(productIndex,1);
+        writeFile(producto);
+        res.redirect('/listadoDeProductos');
+    },
 
 
     carrito: (req, res) => {
@@ -62,12 +101,15 @@ const controller={
         res.render('productDetail');
 
     },
+
     detalle_producto2: (req, res) => {
         res.render('productDetail_2');
     },
+
     detalle_producto3: (req, res) => {
         res.render('productDetail_3');
     },
+
     form_producto: (req, res) => {
         res.render('form_productos');
     },
