@@ -18,6 +18,9 @@ router.get('/form_productos', productController.form_producto);
 
 router.get("/listadoDeProductos",productController.listadoDeProductos);
 router.get('/detail/:id', productController.detail); 
+router.get("/edit/:id", productController.edit);
+router.put("/edit/:id", productController.update);
+router.delete("/delete/:id", productController.destroy);
 
 
 

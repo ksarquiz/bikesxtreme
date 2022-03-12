@@ -13,6 +13,7 @@ article{
 .listado-caja{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 

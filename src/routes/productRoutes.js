@@ -16,6 +16,14 @@ router.get("/listadoDeProductos",productController.listadoDeProductos);
 router.get('/create', productController.create); 
 router.post('/create', productController.store); 
 
+router.get('/detail/:id', productController.detail); 
+
+router.get("/edit/:id", productController.edit);
+router.put("/edit/:id", productController.update);
+
+router.delete("/delete/:id", productController.destroy);
+
+
 /*** GET ONE PRODUCT ***/ 
 //router.get('/detail/:id/', productController.detail); 
 
