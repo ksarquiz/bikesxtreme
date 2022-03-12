@@ -17,7 +17,7 @@ router.get('/ProductDetail_3', productController.detalle_producto3);
 router.get('/form_productos', productController.form_producto);
 
 router.get("/listadoDeProductos",productController.listadoDeProductos);
-router.get('/detail/:id/', productController.detail); 
+router.get('/detail/:id', productController.detail); 
 
 
 

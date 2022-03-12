@@ -1,30 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
     <%-include('partials/head')%>
-    <link href="public/css/style_listadoProduct.css" rel="stylesheet">
+    <link href="../../public/css/style_listadoProduct.css" rel="stylesheet">
 <body>
     <%-include('partials/header')%>
 
     <main>
-        <article>
-            <div class="image-container">
-                <img src="static/images/imagen_cannondale.jpg" alt="bici">
-            </div>
-            <p> Información de la Bicicleta</p>
+        <div class="listado-caja">
             <% producto.forEach(function(producto) { %>
-            <ul>
-                <li>Nombre: <%= producto.nombre %> </li>
-                <li>Marca: <%= producto.marca %> </li>
-                <li>Precio: <%= producto.precio %> </li>
-                <li>Cuadro: <%= producto.TalleCuadro %> </li>
-                <li>Descripción: <%= producto.Descripcion %> </li>
-                <li>Rodado: <%= producto.Rodado %> </li>
-                <li>Velocidades: <%= producto.Velocidades %> </li>
-                <li>Color: <%= producto.Color %> </li>
-            </ul>
-        </article>
+            <article>
+                <div class="image-container">
+                    <img src="static/images/BMC_3.png" alt="bici" width="20%">
+                </div>
+                <p> Información de la Bicicleta</p>
+                
+                <ul>
+                    <li>Nombre: <%= producto.nombre %> </li>
+                    <li>Marca: <%= producto.marca %> </li>
+                    <li>Precio: <%= producto.precio %> </li>
+                    <li>Cuadro: <%= producto.TalleCuadro %> </li>
+                    <li>Descripción: <%= producto.Descripcion %> </li>
+                    <li>Rodado: <%= producto.Rodado %> </li>
+                    <li>Velocidades: <%= producto.Velocidades %> </li>
+                    <li>Color: <%= producto.Color %> </li>
+                </ul>
+            </article>
 
-        <% }) %>
+            <% }) %>
+        </div>
     </main>
 
 
