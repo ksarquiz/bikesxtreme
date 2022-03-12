@@ -14,13 +14,9 @@ router.get('/ProductCart', productController.carrito);
 router.get('/ProductDetail', productController.detalle_producto);
 router.get('/ProductDetail_2', productController.detalle_producto2);
 router.get('/ProductDetail_3', productController.detalle_producto3);
-router.get('/form_productos', productController.form_producto);
 
-router.get("/listadoDeProductos",productController.listadoDeProductos);
-router.get('/detail/:id', productController.detail); 
-router.get("/edit/:id", productController.edit);
-router.put("/edit/:id", productController.update);
-router.delete("/delete/:id", productController.destroy);
+
+
 
 
 
