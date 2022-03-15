@@ -5,7 +5,7 @@ const app = express();
 const path = require("path");
 
 //Acceso a archivos estaticos
-app.use(express.static(__dirname + "/public"));
+app.use('/static', express.static(__dirname + "/public"));
 
 // Renderizando las Vistas con el motor de plantillas
 app.set('view engine', 'ejs');
