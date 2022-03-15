@@ -12,18 +12,6 @@
         "descripcion": 45
     },
     {
-        "id": 2,
-        "nombre": "Cheston",
-        "marca": "Scott",
-        "precio": 52771.75,
-        "talle_producto": "L",
-        "rodado": 20,
-        "velocidad": 10,
-        "color": "Violet",
-        "fotoProducto": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAJjSURBVDjLpVPPaxNBGH2zu026piEpTayhJVBzswR/BBVvXiyKiJeACv4LnnsRQ/DqIYcilApevQuWHIpgqIhiSJQiCrEBf9EGarqm2eyP2fGbSZMWjCC4MHwMM+99771vhwkh8D+fcXhTrVYf+75/2/M8gyqoquW6rqxP8vn8rZEE9Xo9RoBH8Xg8Hw4fgUMgBAGUNlI4ORlHubx6k3Z/EtRqtcsSnEgkZiKRCDab3yC7B4FAIAIiEuBE5jjOaAt0eTWdTquNbffgEfh9/S0RBMN1aeGKsjGSQHoMhUKwLKvfmXOcmD+luov97jLovyqQzJxA8pIciJRer72hyimgLsAYGo0owqaG5ZUl8gQmk2nvtKYXF4stpaCflVBEkmA+ewaatYZo6BmMCJ0LDsdOYmv3Ivthxa7R9ae9nn2MassYeOsrkJK5kj4VXsdMbpb2LepJ1qwuxhvPxdef13d1nUm7akiaJBiC+UFw+hgdGiac7fOwv+dgTpiqUdfVlWTf7ys3ZDidv1EGJy0IGZwG6Bp1TdYphi40Nib7EdBlno/hVJQCOQVd15X0YF8FYwE87mLn8xzeradJnaUA3HPpjq8mpghIwetKpYJOp4NoNIpxM0x/IEMgLToaYqkaTp7dAHqaAuiMjwnuCd/tKNlMyi+VSldpGsVUKpWbO55BLDYFu/UCem+NQjTgenvwHBsvN5JfYtOnZ51u2//QbGVXlh5+ZidfY6FQWCCiB7Syg8cka+TcXVi2D/PTfS5FKCuZe+LXHhfsX57zjeIr3t7aRDooX2C+lbF5aKJz9M6ytd0UvwHmbqDcpFnnSAAAAABJRU5ErkJggg==",
-        "descripcion": "hola"
-    },
-    {
         "id": 3,
         "nombre": "Medcraft",
         "marca": "Trek",
@@ -58,27 +46,5 @@
         "color": "Fuscia",
         "fotoProducto": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAALeSURBVDjLY/j//z8DDKvNusuTturRzro9L95NO/b674RDr37W73z+Pmnxg9PypRcUkNXCMIaAcu9Nj7rjb24ee/rt/9HH3/47zry7Si7/vKZM5hlGggYodd5g1J9wc+KiKx8+Wk+5vSh367OLlp3XF8kknxbGphnDAIWGK4kbb37+pV13pV82+6xF1Y7nt90m3NwinX3JWrP51hzz3nsHTTrv7jZpvbPbrPXWQc3Sa8sQmqsuq5bsfHF15ul3b2TSzphJx5/UmXLw9Wv/KbcPSGdecFauuDnZZ97jz9kbX/zPXPPiv07pjXXisRfK4AYYtVydufn6pz/zTr77MOHAqxczDr5+e+Dmp/+xs+6eEfM6IKffcGt9wLxH/5x6795NXPbkv0T0+Wax8LNsDMAAYgEGUOySM+8++027s1cy9GikRODhYHG/g3lT97x4mzL77mXJhLMZMUue/rdtu3sZaKt7xNzH/2WizveCwwAYQHrZax5fmnTg1SuJoCOGMBeJeu5VT5px52LGrHsP3Cbff+824d5Lsajz1kBbgyJnPvyvmnhhGdiAjp3Pv087+Op/89ZnX5Jn3N4GEhRx32Mc3HPj5LJDb/5HT7r3P3HJk/9iEWdrwXIhp73Dp97/r518YQvWdICMgc6NiZ7/+H/yoif/U2fM/58zJf5/Wp///6hWj/82ucU3BL2OCOPWHH3ezLr+5mWv3rvffKvrTzeuTvy/5crU/xee7frfvzvrf3i/7n/jdJ15OA3QzL60JmHeo/9iwSebY9tdvm+8POH/xmuT/oNAz57U//170v+bZ0v9wNAidCRj0dAzxe5tdz54tN35Kux3Itin2vD/titz/iODTZemAg2QxLTZvfPuJ9++u/99e+789+m4898o7eIxyxzp7927kv6370oAa27fmQB2gUW2/H+8gQjDQJtagns0/vfuSgHbDKJBfKB4D1EGQA3pAOJPIGdD6Q6QOADllJVJzH+HzQAAAABJRU5ErkJggg==",
         "descripcion": 56
-    },
-    {
-        "id": 6,
-        "marca": "sdf",
-        "precio": "321",
-        "talle_producto": "sdf",
-        "fotoProducto": "WhatsApp Image 2022-03-11 at 2.38.37 PM.jpeg",
-        "rodado": "sfd",
-        "velocidad": "sdf",
-        "color": "sdf",
-        "descripcion": "sdf"
-    },
-    {
-        "id": 7,
-        "marca": "sdf",
-        "precio": "123",
-        "talle_producto": "dfs",
-        "fotoProducto": "WhatsApp Image 2022-03-11 at 2.38.37 PM.jpeg",
-        "rodado": "sdf",
-        "velocidad": "sfd",
-        "color": "sfs",
-        "descripcion": "sfd"
     }
 ]
