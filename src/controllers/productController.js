@@ -1,6 +1,8 @@
 const path = require('path');
 const fs = require("fs");
 
+const productsFilePath = path.join(__dirname, '../data/listadoProductos.json');
+const products1 = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
 
 function findAll(){
@@ -9,8 +11,8 @@ function findAll(){
    return productos;
 }
 function writeFile(array){
-    let string = JSON.stringify(array, null, 4);
-    fs.writeFileSync(path.join(__dirname, "../data/listadoProductos.json"), string);
+    let string = JSON.stringify(array, null, 4)
+    fs.writeFileSync(path.join(__dirname, "../data/listadoProductos.json"), string)
 }
 
 //*---------------------------------------------------------------------------------------------*//
@@ -36,20 +38,20 @@ const controller={
     store: (req, res) => {
         const producto = findAll();
         let newProduct = {
-			id: producto.length +1,
-			nombre: req.body.nombre_producto,
+			id: producto.length + 1,
+			nombre1: req.body.nombre1,
             marca: req.body.marca,
 			precio: req.body.precio,
-			TalleCuadro: req.body.talle_producto,
-			Imagen: req.body.fotoProducto,
-            Rodado: req.body.rodado,
-            Velocidades: req.body.velocidad,
-            Color: req.body.color,
-			Descripcion: req.body.descripcion}
+			talle_producto: req.body.talle_producto,
+			fotoProducto: req.body.fotoProducto,
+            rodado: req.body.rodado,
+            velocidad: req.body.velocidad,
+            color: req.body.color,
+			descripcion: req.body.descripcion}
 
-        producto.push(newProduct);
-        writeFile(producto);
-        res.redirect("/product/listadoDeProductos");
+        producto.push(newProduct)
+        writeFile(producto)
+        res.redirect("/product/listadoDeProductos")
     },
 
     edit: (req, res) => {
